@@ -1,7 +1,7 @@
 script.on_event(defines.events.on_player_created, function(event)
 	local player = game.players[event.player_index]
 
-	if player == nil then return end
+	if player.character == nil then return end
 
 	player.get_inventory(defines.inventory.character_main).clear()
 	player.get_inventory(defines.inventory.character_guns).clear()
