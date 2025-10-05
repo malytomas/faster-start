@@ -1,12 +1,13 @@
 
+if not global then
+	global = {}
+end
+if not global.donePlayers then
+	global.donePlayers = {}
+end
+
 function initPlayer(player)
-	if player.character == nil then return end
-	if global == nil then
-		global = {}
-	end
-	if global.donePlayers == nil then
-		global.donePlayers = {}
-	end
+	if not player.character then return end
 	if global.donePlayers[player] ~= nil then return end
 	global.donePlayers[player] = true
 
