@@ -54,7 +54,7 @@ function initPlayer(player)
 	local armorGrid = armorInventory.find_item_stack("power-armor").grid
 
 	local equipment = {
-		"fusion-reactor-equipment",
+		"fission-reactor-equipment",
 		"exoskeleton-equipment",
 		"personal-roboport-equipment",
 	}
